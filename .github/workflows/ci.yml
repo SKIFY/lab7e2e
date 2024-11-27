@@ -25,7 +25,10 @@ jobs:
       run: npm install
 
     - name: Install Playwright dependencies
-      run: npx playwright install  # Цей крок встановить браузери для Playwright
+      run: npx playwright install  # Встановлення браузерів для Playwright
+
+    - name: Install http-server
+      run: npm install --save-dev http-server  # Встановлення http-server
 
     - name: Run tests
       run: npm test
